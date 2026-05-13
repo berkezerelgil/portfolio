@@ -1,0 +1,4 @@
+Replace this file with your real CV.
+
+The hero section links to /cv.pdf — drop a file named cv.pdf inside the /public folder
+and the "Download CV" button will serve it automatically.
