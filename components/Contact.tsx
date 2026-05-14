@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Reveal } from "./Reveal";
 import { profile } from "@/lib/data";
-import { ArrowUpRight, Github, Linkedin, Mail, Twitter, MapPin, Check } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Phone, MapPin, Check } from "lucide-react";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
@@ -71,6 +71,11 @@ export function Contact() {
                   </button>
 
                   <div className="flex items-center gap-3 rounded-2xl border border-border bg-muted/40 p-4">
+                    <Phone className="h-4 w-4 text-accent" />
+                    <span className="text-sm">{profile.phone}</span>
+                  </div>
+
+                  <div className="flex items-center gap-3 rounded-2xl border border-border bg-muted/40 p-4">
                     <MapPin className="h-4 w-4 text-accent" />
                     <span className="text-sm">{profile.location}</span>
                   </div>
@@ -94,14 +99,6 @@ export function Contact() {
                     className="btn btn-ghost"
                   >
                     <Linkedin className="h-4 w-4" /> LinkedIn
-                  </a>
-                  <a
-                    href={profile.socials.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-ghost"
-                  >
-                    <Twitter className="h-4 w-4" /> X / Twitter
                   </a>
                 </div>
               </Reveal>

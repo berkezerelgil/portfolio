@@ -1,58 +1,87 @@
 export const profile = {
   name: "Berke Zerelgil",
   shortName: "BZ",
-  role: "Mathematics & Computer Science Student",
-  tagline: "Building at the intersection of AI, software, and human-centered design.",
+  role: "Mathematics & CS Student · Aspiring Product Manager",
+  tagline:
+    "Math, data, and team leadership — on the road from data analyst to product manager.",
   intro:
-    "I design and engineer intelligent products — from research-driven AI prototypes to polished mobile apps and mathematical models. I care about clarity of thought, beauty of execution, and the small details that turn good software into something people actually love.",
-  location: "Istanbul, Türkiye",
+    "I'm a final-year Mathematics & Computer Science student at Osmangazi University, currently leading a 100-member technology club and digitizing the operations of a traditional Turkish company. My plan is the long game: start with data analysis to sharpen my number sense, grow into product ownership, and build toward becoming the kind of product manager who can both read the spreadsheet and ship the roadmap.",
+  location: "Eskişehir, Türkiye",
   email: "berkezerelgil@gmail.com",
-  availability: "Open to internships, research collaborations & founding-team roles.",
+  phone: "+90 538 329 6386",
+  availability:
+    "Open to summer 2026 data analyst & product internships.",
   socials: {
-    github: "https://github.com/berkezerelgil",
+    github: "https://github.com/berke13",
     linkedin: "https://www.linkedin.com/in/berkezerelgil",
-    twitter: "https://x.com/berkezerelgil",
     email: "mailto:berkezerelgil@gmail.com",
   },
 };
 
 export const stats = [
-  { label: "Years coding", value: "6+" },
-  { label: "Shipped projects", value: "20+" },
-  { label: "Hackathons", value: "12" },
-  { label: "Mentorship hours", value: "300+" },
+  { label: "Members led", value: "100+" },
+  { label: "Leadership roles", value: "2" },
+  { label: "Years in Math & CS", value: "4" },
+  { label: "Languages spoken", value: "3" },
 ];
 
 export const skillGroups = [
   {
-    title: "Languages",
-    items: ["Python", "TypeScript", "JavaScript", "Dart", "C++", "Java", "SQL"],
+    title: "Data & Analytics",
+    items: [
+      "Python",
+      "Excel (Advanced)",
+      "Google Sheets",
+      "Pivot tables",
+      "Power Query",
+      "SQL (learning)",
+      "Data visualization",
+    ],
   },
   {
-    title: "AI / ML",
-    items: ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face", "LangChain", "OpenAI API"],
+    title: "Product & Strategy",
+    items: [
+      "Requirements gathering",
+      "User research",
+      "Roadmapping",
+      "Stakeholder mapping",
+      "Agile / Scrum",
+      "Process design",
+    ],
   },
   {
-    title: "Frameworks",
-    items: ["Next.js", "React", "Flutter", "Node.js", "FastAPI", "Express"],
+    title: "Design & UX",
+    items: ["Figma", "Canva", "Wireframing", "UI/UX collaboration"],
   },
   {
-    title: "Design & UI",
-    items: ["TailwindCSS", "Framer Motion", "Figma", "shadcn/ui", "Three.js"],
+    title: "No-code & Automation",
+    items: [
+      "AppSheet",
+      "Google Apps Script",
+      "Google Workspace",
+      "Notion",
+      "Trello",
+    ],
   },
   {
-    title: "Mathematics",
-    items: ["MATLAB", "Maple", "NumPy", "SymPy", "LaTeX", "Wolfram"],
+    title: "Math Foundations",
+    items: [
+      "Statistics",
+      "Linear algebra",
+      "Probability",
+      "Discrete math",
+      "Optimization",
+    ],
   },
   {
-    title: "Tools & Cloud",
-    items: ["Git", "Docker", "Vercel", "Firebase", "Supabase", "Linux"],
+    title: "Spoken Languages",
+    items: ["Turkish (Native)", "English (C2)", "German (A2)"],
   },
 ];
 
 export type Project = {
   title: string;
-  category: "AI" | "Mobile" | "Mathematics" | "UI/UX" | "Startup";
+  category: "Product" | "Data" | "Leadership" | "Design";
   description: string;
   tech: string[];
   github?: string;
@@ -63,191 +92,175 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Lumen — AI Study Companion",
-    category: "AI",
+    title: "Mobile Inventory Tracking System",
+    category: "Product",
     description:
-      "A LLM-powered study assistant that turns lecture notes into adaptive quizzes, spaced-repetition decks, and visual concept maps. Built with retrieval-augmented generation and a custom evaluation loop.",
-    tech: ["Next.js", "Python", "LangChain", "OpenAI", "pgvector"],
-    github: "https://github.com/berkezerelgil/lumen",
-    demo: "https://lumen.demo",
-    year: "2026",
+      "Designed and shipped a mobile-first inventory tracking system for a traditional forestry-products company. Replaced manual stock counts with a real-time tool the warehouse team actually uses — built on AppSheet + Google Sheets, owned end-to-end from requirements to rollout.",
+    tech: ["AppSheet", "Google Sheets", "Apps Script", "Requirements gathering"],
+    year: "2024 – Present",
     highlight: true,
   },
   {
-    title: "Atlas — Personal Finance for Students",
-    category: "Mobile",
+    title: "Digital Accounting & Cost Tracking Pipeline",
+    category: "Data",
     description:
-      "A Flutter app that aggregates spending across cards and bank accounts, forecasts monthly cash flow, and gamifies saving goals. Used by 1,200+ students across three universities.",
-    tech: ["Flutter", "Dart", "Firebase", "Riverpod"],
-    github: "https://github.com/berkezerelgil/atlas",
-    demo: "https://atlas.app",
-    year: "2025",
+      "Modernized invoicing and cost tracking workflows at Denizim Orman Ürünleri. Connected procurement, accounting, and sales into a single reporting view — turning a folder of paper invoices into a queryable, daily-refreshed dashboard for management.",
+    tech: ["Excel", "Google Sheets", "Pivot tables", "Power Query"],
+    year: "2024 – Present",
     highlight: true,
   },
   {
-    title: "Spiral — Dynamical Systems Visualizer",
-    category: "Mathematics",
+    title: "MACS Club — Operating System",
+    category: "Leadership",
     description:
-      "Interactive WebGL playground for exploring attractors, bifurcations, and chaotic maps. Built as a teaching tool for a non-linear dynamics seminar.",
-    tech: ["Three.js", "TypeScript", "GLSL", "MATLAB"],
-    github: "https://github.com/berkezerelgil/spiral",
-    year: "2025",
-  },
-  {
-    title: "Nimbus — Cloud Cost Intelligence",
-    category: "AI",
-    description:
-      "ML model that predicts AWS spend anomalies before they hit your invoice. Deployed as a SaaS prototype with Slack alerting. Won 2nd place at TechFlow Hackathon.",
-    tech: ["Python", "FastAPI", "XGBoost", "Postgres"],
-    github: "https://github.com/berkezerelgil/nimbus",
-    year: "2025",
-  },
-  {
-    title: "Halo — Interface Design System",
-    category: "UI/UX",
-    description:
-      "A 60-component design system focused on dark-mode-first SaaS dashboards. Includes Figma tokens, a Storybook, and ready-to-ship React primitives.",
-    tech: ["Figma", "React", "TailwindCSS", "Storybook"],
-    demo: "https://halo.design",
-    year: "2024",
-  },
-  {
-    title: "Orbit — Student Founder Platform",
-    category: "Startup",
-    description:
-      "A platform that connects student founders with mentors, capital, and co-builders. Currently in private beta with 200+ founders and 40+ mentors onboarded.",
-    tech: ["Next.js", "Supabase", "Stripe", "Resend"],
-    demo: "https://orbit.community",
-    year: "2026",
+      "Built the operating system for a 100+ member technology club: task delegation pipelines, weekly reporting cadence, event execution playbooks, and a structured mentorship pathway. Running a student organization the way I'd want to run a product team.",
+    tech: ["Notion", "Discord", "Scrum", "Stakeholder management"],
+    year: "2025 – Present",
     highlight: true,
+  },
+  {
+    title: "Cross-Department Workflow Automation",
+    category: "Product",
+    description:
+      "Mapped operations across inventory, accounting, and marketing teams, then closed information gaps with automated reports. Established a daily reporting cadence that gave managers same-day visibility instead of weekly summaries.",
+    tech: ["AppSheet", "Google Sheets", "Process design", "Automation"],
+    year: "2024 – Present",
+  },
+  {
+    title: "English Mentorship Program — AI Club",
+    category: "Leadership",
+    description:
+      "Founded and ran an English mentorship program inside the Osmangazi AI Club — supporting students preparing for IELTS and building conversational fluency. Designed lesson tracks, paired mentors with mentees, and tracked progress over the year.",
+    tech: ["Program design", "Curriculum", "Mentorship", "Operations"],
+    year: "2024 – 2025",
+  },
+  {
+    title: "MACS Tech Events & Workshop Series",
+    category: "Design",
+    description:
+      "Co-designed and ran large-scale workshops and summits — from speaker logistics to UI/UX for event collateral. Treated events as a product: defined the attendee journey, iterated on feedback after each cohort.",
+    tech: ["Figma", "Canva", "Event ops", "Stakeholder management"],
+    year: "2025 – Present",
   },
 ];
 
 export const leadership = [
   {
-    role: "President",
-    org: "Computer Science Society",
-    period: "2024 — Present",
+    role: "President & Project Lead",
+    org: "MACS Club, Osmangazi University",
+    period: "May 2025 — Present",
     detail:
-      "Lead a 30-person team running weekly technical workshops, an annual hackathon (400+ attendees), and a mentorship pipeline that has placed 18 students in summer internships.",
+      "Lead a 100+ member technology-focused student organization. Plan and run large-scale technical events, workshops, and summits; oversee logistics, communication, and execution. Lead internal software projects, support UI/UX work, and mentor junior members in programming and project development.",
   },
   {
-    role: "Founder & Lead Organizer",
-    org: "AI x Math Reading Group",
-    period: "2024 — Present",
+    role: "Digital Transformation & Project Coordinator Intern",
+    org: "Denizim Orman Ürünleri, Adana",
+    period: "Sep 2024 — Present",
     detail:
-      "Curate a weekly seminar exploring papers at the boundary of mathematics and modern AI — from optimal transport to mechanistic interpretability.",
+      "Coordinate digital transformation initiatives across inventory, accounting, and marketing workflows. Designed and deployed a mobile inventory tracking system, modernized invoicing and cost tracking, and improved cross-department efficiency through workflow automation and structured reporting.",
   },
   {
-    role: "Mentor",
-    org: "Code the Future — High School Outreach",
-    period: "2023 — Present",
+    role: "Supervisor & English Class Mentor",
+    org: "Artificial Intelligence Club, Osmangazi University",
+    period: "Feb 2024 — Apr 2025",
     detail:
-      "Coach high-school students on first-time programming projects, university applications, and competitive math. 12 students mentored, 4 placed at top universities.",
+      "Coordinated university-wide AI seminars, workshops, and technical events. Supervised student teams during project and event execution. Founded and led an English Mentorship Program covering IELTS preparation and conversational English.",
   },
   {
-    role: "Community Lead",
-    org: "Istanbul Hack Collective",
-    period: "2023 — 2024",
+    role: "Licensed Athlete",
+    org: "Ministry of Youth and Sports — Athletics",
+    period: "2022",
     detail:
-      "Helped grow a student-run engineering community to 1,500+ members and co-organized 6 city-wide hackathons.",
+      "Competitive athlete with an official Ministry-issued license. A reminder that consistency, training, and showing up matter as much in product work as they do on the track.",
   },
 ];
 
 export const timeline = [
   {
     year: "2026",
-    title: "Founding Engineer Intern",
-    place: "Early-stage AI startup",
+    title: "Final year + targeting data analyst internship",
+    place: "Osmangazi University · 4th year",
     detail:
-      "Shipping production AI features end-to-end — from research notebooks to user-facing dashboards.",
+      "Wrapping up the B.Sc. in Mathematics & Computer Science while continuing as MACS Club President and Denizim's digital transformation lead. Preparing for a summer 2026 data analyst role — first step on the way to product.",
   },
   {
     year: "2025",
-    title: "Research Assistant — Applied Mathematics",
-    place: "University Lab",
+    title: "Elected President & Project Lead — MACS Club",
+    place: "Osmangazi University",
     detail:
-      "Investigating numerical methods for partial differential equations with applications in physics-informed neural networks.",
+      "Took ownership of a 100-member technology club. Rebuilt internal processes around clearer task delegation, weekly reporting, and a real mentorship pipeline.",
   },
   {
     year: "2024",
-    title: "Software Engineering Intern",
-    place: "Fintech scale-up",
+    title: "Joined Denizim as Digital Transformation Intern",
+    place: "Adana, Türkiye",
     detail:
-      "Built a real-time notification pipeline serving 200k+ users; cut alert latency by 60%.",
+      "Started turning a paper-based SME into a digital one — first a mobile inventory app, then accounting and reporting systems. My first taste of what 'product' really means in the real world.",
   },
   {
-    year: "2023",
-    title: "Started B.Sc. in Mathematics & Computer Science",
-    place: "University",
+    year: "2024",
+    title: "Supervisor & English Mentor — AI Club",
+    place: "Osmangazi University",
     detail:
-      "Double major program with a focus on AI, dynamical systems, and theoretical CS.",
+      "Helped run university-wide AI events and founded an English mentorship program inside the club. Learned how much of a tech community is operations.",
   },
   {
     year: "2022",
-    title: "First production product shipped",
-    place: "Independent",
+    title: "Started B.Sc. in Mathematics & Computer Science",
+    place: "Osmangazi University, Eskişehir",
     detail:
-      "A study-planner web app reached 5,000 users in the first month — my first taste of what shipping really means.",
+      "Chose the double-major program for its mix of rigor and applicability — strong foundations for the data side of product work.",
+  },
+  {
+    year: "2022",
+    title: "Graduated high school + earned Athletics License",
+    place: "Arif Nihat Asya Anatolian HS, Adana",
+    detail:
+      "Finished high school and got a Ministry-issued Athletics License the same year. A discipline I still rely on.",
   },
 ];
 
 export const certifications = [
   {
-    title: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI / Coursera",
-    year: "2025",
+    title: "American Culture — C2 English Certificate",
+    issuer: "American Culture",
+    year: "—",
   },
   {
-    title: "Machine Learning Engineering for Production (MLOps)",
-    issuer: "DeepLearning.AI",
-    year: "2025",
-  },
-  {
-    title: "Google Cloud Associate Engineer",
-    issuer: "Google Cloud",
-    year: "2024",
-  },
-  {
-    title: "Mathematical Thinking in Computer Science",
-    issuer: "UC San Diego / Coursera",
-    year: "2024",
-  },
-  {
-    title: "Flutter & Dart — The Complete Guide",
-    issuer: "Academind",
-    year: "2023",
-  },
-  {
-    title: "International Mathematical Olympiad — National Finalist",
-    issuer: "TÜBİTAK",
+    title: "Athletics License",
+    issuer: "Ministry of Youth and Sports, Türkiye",
     year: "2022",
+  },
+  {
+    title: "Driver's License — B Class",
+    issuer: "Republic of Türkiye",
+    year: "—",
   },
 ];
 
 export const posts = [
   {
-    title: "The Geometry of Learning Rates",
+    title: "From a Math Major to a Product Mindset",
     excerpt:
-      "Why a single scalar is the most important — and most underestimated — hyperparameter in modern deep learning, told through three small experiments.",
+      "Why a Mathematics & Computer Science background is one of the best preparations for product work — and the specific habits I'm building to make the transition.",
+    readTime: "7 min",
+    date: "Coming soon",
+    tag: "Career",
+  },
+  {
+    title: "Notes from Digitizing a Family Business",
+    excerpt:
+      "What I learned shipping AppSheet + Google Sheets tools inside a traditional SME — about requirements, change management, and the gap between 'feature' and 'adoption'.",
+    readTime: "9 min",
+    date: "Coming soon",
+    tag: "Product",
+  },
+  {
+    title: "Running a 100-Member Student Club Like a Startup",
+    excerpt:
+      "The operating system I built for MACS Club — task delegation, weekly cadence, mentorship pipelines — and what translates directly to running a product team.",
     readTime: "8 min",
-    date: "Mar 2026",
-    tag: "AI",
-  },
-  {
-    title: "Designing for Stillness",
-    excerpt:
-      "Notes on building interfaces that earn attention slowly, on what we lose to dopamine-driven UX, and on the calm tools I want to build instead.",
-    readTime: "6 min",
-    date: "Jan 2026",
-    tag: "Design",
-  },
-  {
-    title: "A Student's Guide to Shipping",
-    excerpt:
-      "The unglamorous habits that took me from 'project ideas' to actually launched products people use — written to my younger self.",
-    readTime: "10 min",
-    date: "Nov 2025",
-    tag: "Craft",
+    date: "Coming soon",
+    tag: "Leadership",
   },
 ];

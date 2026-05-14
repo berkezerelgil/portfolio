@@ -1,7 +1,7 @@
 "use client";
 
 import { profile } from "@/lib/data";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -41,15 +41,6 @@ export function Footer() {
               className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/60 text-muted-foreground transition hover:text-foreground"
             >
               <Linkedin className="h-4 w-4" />
-            </a>
-            <a
-              href={profile.socials.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card/60 text-muted-foreground transition hover:text-foreground"
-            >
-              <Twitter className="h-4 w-4" />
             </a>
             <a
               href={profile.socials.email}

@@ -9,11 +9,10 @@ import { cn } from "@/lib/utils";
 
 const categories: Array<Project["category"] | "All"> = [
   "All",
-  "AI",
-  "Mobile",
-  "Mathematics",
-  "UI/UX",
-  "Startup",
+  "Product",
+  "Data",
+  "Leadership",
+  "Design",
 ];
 
 function ProjectCard({ project }: { project: Project }) {

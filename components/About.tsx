@@ -1,32 +1,32 @@
 "use client";
 
 import { Reveal } from "./Reveal";
-import { Sigma, Sparkles, Cpu, Compass } from "lucide-react";
+import { Sigma, LineChart, Users, Compass } from "lucide-react";
 
 const pillars = [
   {
     icon: Sigma,
-    title: "Mathematical foundations",
+    title: "Math as a decision tool",
     text:
-      "I believe the best engineers reason from first principles. Mathematics is how I sharpen mine — from linear algebra to dynamical systems.",
+      "Statistics, probability, and a stubborn habit of asking 'what does the data actually say?' — the foundation I want to bring to every product decision I make.",
   },
   {
-    icon: Cpu,
-    title: "AI as a craft",
+    icon: LineChart,
+    title: "Data-first product thinking",
     text:
-      "I build with modern AI tools — not as a buzzword, but as a creative medium. I care about evaluation, reliability, and the seams between humans and models.",
+      "I'm starting in data analytics on purpose. Before owning a roadmap, I want to be the person in the room who can read the dashboard and ask the right next question.",
   },
   {
-    icon: Sparkles,
-    title: "Design that breathes",
+    icon: Users,
+    title: "Operator at heart",
     text:
-      "Clarity, calm, intent. Whether it's a CLI, a Flutter app, or a research demo — interfaces should respect the user's attention.",
+      "Whether it's digitizing a family business or running a 100-member club, I've spent the last two years learning how teams actually ship — requirements, cadence, follow-through.",
   },
   {
     icon: Compass,
-    title: "Long-term curiosity",
+    title: "The long game",
     text:
-      "I read papers, write essays, mentor students, and ship side-projects. Curiosity compounds — and I'm in this for the next thirty years.",
+      "Data analyst → product owner → product manager. I'm not in a rush for the title — I'm in a rush to be useful, and I'm building the foundation that compounds.",
   },
 ];
 
@@ -41,23 +41,24 @@ export function About() {
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-4 text-display-lg font-semibold tracking-tight">
-                A student of mathematics, a builder by instinct.
+                A math student on the road to product.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                I&apos;m a Mathematics &amp; Computer Science undergraduate who spends
-                most days oscillating between proofs, prototypes, and Figma files.
-                I&apos;m drawn to problems that sit at the intersection of rigor and
-                taste — where the answer has to be both correct and beautiful.
+                I&apos;m a fourth-year Mathematics &amp; Computer Science student
+                at Osmangazi University. Outside of class, I lead MACS Club
+                (100+ members) and run digital transformation projects for a
+                traditional Turkish company — turning paper-based workflows into
+                tools people actually open every day.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Outside of class I lead a student CS society, run an AI &times; math
-                reading group, and ship products under my own name. I&apos;m most
-                useful inside small teams that want to build something thoughtful,
-                fast.
+                My plan is the long game: start in data analytics to ground
+                every decision in numbers, grow into product ownership, and
+                become the kind of PM who can both read the spreadsheet and
+                ship the roadmap.
               </p>
             </Reveal>
           </div>

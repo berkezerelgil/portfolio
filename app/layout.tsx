@@ -42,8 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Berke Zerelgil",
     description:
-      "Mathematics & CS student. AI, software, design.",
-    creator: "@berkezerelgil",
+      "Mathematics & CS student · Aspiring Product Manager.",
   },
   icons: {
     icon: "/favicon.svg",
