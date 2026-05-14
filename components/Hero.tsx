@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowUpRight, Download, Mail, Sparkles } from "lucide-react";
+import { ArrowUpRight, Download, Mail } from "lucide-react";
 import { profile, stats } from "@/lib/data";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -141,19 +141,6 @@ export function Hero() {
           ))}
         </motion.div>
 
-        {/* Scroll hint */}
-        <motion.a
-          href="#about"
-          aria-label="Scroll to next section"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs text-muted-foreground md:flex"
-        >
-          <Sparkles className="h-3.5 w-3.5" />
-          <span>Scroll</span>
-          <ArrowDown className="h-3.5 w-3.5 animate-bounce" />
-        </motion.a>
       </div>
     </section>
   );
